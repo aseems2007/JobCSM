@@ -1,0 +1,71 @@
+MongoDB is an open-source document database that provides high performance, high availability, and automatic scaling. MongoDB obviates the need for an Object Relational Mapping (ORM) to facilitate development.
+
+Documents
+
+A record in MongoDB is a document, which is a data structure composed of field and value pairs. MongoDB documents are similar to JSON objects. The values of fields may include other documents, arrays, and arrays of documents. Structure of our documents can be seen from database_str.txt
+
+Collections
+
+MongoDB stores documents in collections. Collections are analogous to tables in relational databases. Unlike a table, however, a collection does not require its documents to have the same schema. In MongoDB, documents stored in a collection must have a unique _id field that acts as a primary key.
+
+To start a MongoDB we go as follows:
+<path of mongod.exe> --dbpath <path where data is stored>
+if path contains spaces then surround path in double quotes. In out case, command looks like
+C:\Program Files\MongoDB\Server\3.2\bin\mongod.exe --dbpath F:\NaukriWork\data
+Inside data folder we make 2 subfolders named db and logs
+
+To connect to MongoDB through the mongo.exe shell, open another Command Prompt.
+C:\Program Files\MongoDB\Server\3.2\bin\mongo.exe
+
+
+
+
+
+Configure a Windows Service for MongoDB Community Edition
+1. Open an Administrator command prompt.
+2. Create directories for data and logs
+3. Create a configuration file.
+	Create a configuration file. The file must set systemLog.path. Include additional configuration options as appropriate.
+	For example, create a file at C:\Program Files\MongoDB\Server\3.2\bin\mongod.cfg that specifies both systemLog.path and storage.dbPath:
+	systemLog:
+		destination: file
+		path: F:\NaukriWork\data\logs\mongod.exe
+	storage:
+		dbPath: F:\NaukriWork\data\db
+4. Install the MongoDB service.
+	Run all of the following commands in Command Prompt with “Administrative Privileges”.
+	Install the MongoDB service by starting mongod.exe with the --install option and the -config option to specify the previously created configuration file.
+	"C:\Program Files\MongoDB\Server\3.2\bin\mongod.exe" --config "C:\Program Files\MongoDB\Server\3.2\bin\mongod.cfg" --install
+	To use an alternate dbpath, specify the path in the configuration file or on the command line with the --dbpath option.
+	If needed, you can install services for multiple instances of mongod.exe or mongos.exe. Install each service with a unique --serviceName and --serviceDisplayName. Use multiple instances only when sufficient system resources exist and your system design requires it.
+
+5. Start the MongoDB service.
+	net start MongoDB
+6. Stop or remove the MongoDB service as needed.
+	To stop the MongoDB service use the following command:
+	net stop MongoDB
+	To remove the MongoDB service use the following command:
+	"C:\Program Files\MongoDB\Server\3.2\bin\mongod.exe" --remove
+
+
+
+
+
+	
+Import data into the collection.
+
+In the system shell or command prompt, use mongoimport to insert the documents into the restaurants collection in the test database. If the collection already exists in the test database, the operation will drop the restaurants collection first.
+
+mongoimport --db test --collection restaurants --drop --file ~/downloads/primer-dataset.json
+
+The mongoimport connects to a mongod instance running on localhost on port number 27017. The --file option provides the path to the data to import, in this case, ~/downloads/primer-dataset.json.
+
+To import data into a mongod instance running on a different host or port, specify the hostname or port by including the --host and the --port options in your mongoimport command.
+
+we have imported jobs.json to jobs collection and seekers.json to job_seekers collection in our database naukri
+
+
+
+
+
+

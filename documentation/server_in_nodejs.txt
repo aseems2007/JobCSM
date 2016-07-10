@@ -1,0 +1,26 @@
+Connecting to MongoDB database:
+first install mongodb package containing native mongo drivers using "npm install mongodb"
+then Load the mongodb module using var mongodb = require('mongodb'), Define the URL we need to connect to i.e. "mongodb://localhost:27017/my_database_name".
+Then Connect to the database using MongoClient interface. In the callback we get error or the db object. We use the db object in order to communicate with the database. Code is as follows:
+  var MongoClient = mongodb.MongoClient;
+  MongoClient.connect(url, function (err, db) {
+    if (err) {
+      console.log('Unable to connect to the mongoDB server. Error:', err);
+    } else {
+      console.log('Connection established to', url);
+
+      // do some work here with the database.
+
+      //Close connection
+      db.close();
+  }
+
+
+
+
+There are a couple of things to keep in mind when using the mongodb native driver:
+1.	The query function names and their parameters are similar to that of native mongodb commands.
+2.	All these query functions take the callback as the last argument. The callback function gives the first argument as error and the second argument as result. Result is actually result/output provided by the mongodb on running these commands. It is similar to what you see if you had run these queries in the mongodb shell.
+
+Rest insert and update operations were seen from:
+http://blog.modulus.io/mongodb-tutorial

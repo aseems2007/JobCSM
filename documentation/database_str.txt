@@ -1,0 +1,50 @@
+# JobCSM Documentation
+
+MongoDB database structure
+There are two json files as of now. One is Jobs.json whose structure is as follows: (I have used // to mark comment as there si no way to add comments in json)
+Each of these json files are converted to a collection which are named as jobs and job_seekers, and database named is naukri.
+
+
+{
+	"experience-required":{"min":"1", "max":"2"},
+	"sector":"IT",
+																											//this feild must be choosen from a hardcoded drop 	down list while creating the job
+	"eligible-qualification-degrees":[{"degree":"B.Tech.", "department":"name2"}, {"degree":"B.Sc.", "department":"name2"}, {"degree":"M.Tech.", "department":"name2"}],
+																											// list of all degrees whose candidates are eligible e.g if b.tech and m.tech are values than guys with degrees b.tech. or m.tech or both are eligible, few words in department name will work
+	"designation":"software-engineer",
+	"location":[{"city":"noida", "state":"U.P."}, {"city":"bangalore", "state":"Karnataka"}, {"city":"new delhi", "state":"delhi"}]
+																											//which all places you might be posted, state name to be selected from a list of dropdowns, city to be typed while creating the job.
+	"description":"blah blah blah",
+																											// we might be willing to use ML here to send a job to some one acc to description, but that may be or may not be a good idea as description will be typed by HR and "technical" managers
+	"brief_of_skills_required":"blah blah blah"
+																											//ML will be needed here for recommending which Job seeker should be sent notification for this job. this field contains info like experience on certain technology, or like knows about linux etc.etc.
+	"salary":{"min":"500000", "max":"1500000", "denomination":"Rupee"}
+																											// here min part is definately optional, but max may be cumpolsory it will be used to decide which job seekers are to be sent notification. this field will not be visible to job seekers. denominations to be chose from drop down while creating a job.
+}
+
+
+
+Another is seekers.json whose structure is:
+
+
+
+{
+	"qualification":[{"degree":"name1", "department":"name2"}, {"degree":"name1", "department":"name2"},{"degree":"name1", "department":"name2"}],
+																									//degree name from a dropdown list, department name to be typed and while matching we can check if some words are same in required department between job's dept and seeker's dept.
+	"expected_salary":{"min":"300000"},
+																									// Not to be public, will only be used to recommend jobs and will be visible to job providers.
+	"experiance":[
+		{
+			"sector":"IT",
+																									// to be selected from drop down'
+			"company_name":"Microsoft Research Labs - India",
+			"duration_in_months":"26",
+			"designation":[{"position":"SE", "duration":{"from_mm__yy":"0614", "to_mm_yy":"0815"}}, {"position":"SSE", "duration":{"from_mm__yy":"0815", "to_mm_yy":"0816"}}],
+																									//As one can get many promotions in same company so he/she can have many designations for different periods
+			"location":[{"loc1":"noida", "duration_in_months":"10"}, {"loc1":"Bangalore", "duration_in_months":"16"}],
+																									// can have many diff locations because of transfers
+			"technologies_worked_on":"blah blah blah"
+																									// intersection of it with "brief_of_skills_required" field of jobs will help in recommending job seekers to companies
+		}	
+	]
+}
