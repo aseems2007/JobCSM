@@ -1,0 +1,132 @@
+{
+	"qualification":[{"degree":"name1", "department":"name2"}, {"degree":"name1", "department":"name2"},{"degree":"name1", "department":"name2"}],
+	"expected_salary":{"min":"300000"},
+	"experiance":[
+		{
+			"sector":"IT",
+			"company_name":"Microsoft Research Labs - India",
+			"duration_in_months":"26",
+			"designation":[{"position":"SE", "duration":{"from_mm__yy":"0614", "to_mm_yy":"0815"}}, {"position":"SSE", "duration":{"from_mm__yy":"0815", "to_mm_yy":"0816"}}],
+			"location":[{"loc1":"noida", "duration_in_months":"10"}, {"loc1":"Bangalore", "duration_in_months":"16"}],
+			"technologies_worked_on":"blah blah blah"
+		},
+		{
+			"sector":"IT",
+			"company_name":"IBM Research Labs - India",
+			"duration_in_months":"12",
+			"designation":[{"position":"CE", "duration":{"from_mm__yy":"0816", "to_mm_yy":"0817"}}],
+			"location":[{"loc1":"Delhi", "duration_in_months":"12"}],
+			"technologies_worked_on":"blah blah blah"
+		}
+	]
+}
+{
+	"qualification":[{"degree":"name1", "department":"name2"}, {"degree":"name1", "department":"name2"},{"degree":"name1", "department":"name2"}],
+	"expected_salary":{"min":"300000"},
+	"experiance":[
+		{
+			"sector":"IT",
+			"company_name":"Microsoft Research Labs - India",
+			"duration_in_months":"26",
+			"designation":[{"position":"SE", "duration":{"from_mm__yy":"0614", "to_mm_yy":"0815"}}, {"position":"SSE", "duration":{"from_mm__yy":"0815", "to_mm_yy":"0816"}}],
+			"location":[{"loc1":"noida", "duration_in_months":"10"}, {"loc1":"Bangalore", "duration_in_months":"16"}],
+			"technologies_worked_on":"blah blah blah"
+		},
+		{
+			"sector":"IT",
+			"company_name":"IBM Research Labs - India",
+			"duration_in_months":"12",
+			"designation":[{"position":"CE", "duration":{"from_mm__yy":"0816", "to_mm_yy":"0817"}}],
+			"location":[{"loc1":"Delhi", "duration_in_months":"12"}],
+			"technologies_worked_on":"blah blah blah"
+		}
+	]
+}
+{
+	"qualification":[{"degree":"name1", "department":"name2"}, {"degree":"name1", "department":"name2"},{"degree":"name1", "department":"name2"}],
+	"expected_salary":{"min":"300000"},
+	"experiance":[
+		{
+			"sector":"IT",
+			"company_name":"Microsoft Research Labs - India",
+			"duration_in_months":"26",
+			"designation":[{"position":"SE", "duration":{"from_mm__yy":"0614", "to_mm_yy":"0815"}}, {"position":"SSE", "duration":{"from_mm__yy":"0815", "to_mm_yy":"0816"}}],
+			"location":[{"loc1":"noida", "duration_in_months":"10"}, {"loc1":"Bangalore", "duration_in_months":"16"}],
+			"technologies_worked_on":"blah blah blah"
+		},
+		{
+			"sector":"IT",
+			"company_name":"IBM Research Labs - India",
+			"duration_in_months":"12",
+			"designation":[{"position":"CE", "duration":{"from_mm__yy":"0816", "to_mm_yy":"0817"}}],
+			"location":[{"loc1":"Delhi", "duration_in_months":"12"}],
+			"technologies_worked_on":"blah blah blah"
+		}
+	]
+}
+{
+	"qualification":[{"degree":"name1", "department":"name2"}, {"degree":"name1", "department":"name2"},{"degree":"name1", "department":"name2"}],
+	"expected_salary":{"min":"300000"},
+	"experiance":[
+		{
+			"sector":"IT",
+			"company_name":"Microsoft Research Labs - India",
+			"duration_in_months":"26",
+			"designation":[{"position":"SE", "duration":{"from_mm__yy":"0614", "to_mm_yy":"0815"}}, {"position":"SSE", "duration":{"from_mm__yy":"0815", "to_mm_yy":"0816"}}],
+			"location":[{"loc1":"noida", "duration_in_months":"10"}, {"loc1":"Bangalore", "duration_in_months":"16"}],
+			"technologies_worked_on":"blah blah blah"
+		},
+		{
+			"sector":"IT",
+			"company_name":"IBM Research Labs - India",
+			"duration_in_months":"12",
+			"designation":[{"position":"CE", "duration":{"from_mm__yy":"0816", "to_mm_yy":"0817"}}],
+			"location":[{"loc1":"Delhi", "duration_in_months":"12"}],
+			"technologies_worked_on":"blah blah blah"
+		}
+	]
+}
+{
+	"qualification":[{"degree":"name1", "department":"name2"}, {"degree":"name1", "department":"name2"},{"degree":"name1", "department":"name2"}],
+	"expected_salary":{"min":"300000"},
+	"experiance":[
+		{
+			"sector":"IT",
+			"company_name":"Microsoft Research Labs - India",
+			"duration_in_months":"26",
+			"designation":[{"position":"SE", "duration":{"from_mm__yy":"0614", "to_mm_yy":"0815"}}, {"position":"SSE", "duration":{"from_mm__yy":"0815", "to_mm_yy":"0816"}}],
+			"location":[{"loc1":"noida", "duration_in_months":"10"}, {"loc1":"Bangalore", "duration_in_months":"16"}],
+			"technologies_worked_on":"blah blah blah"
+		},
+		{
+			"sector":"IT",
+			"company_name":"IBM Research Labs - India",
+			"duration_in_months":"12",
+			"designation":[{"position":"CE", "duration":{"from_mm__yy":"0816", "to_mm_yy":"0817"}}],
+			"location":[{"loc1":"Delhi", "duration_in_months":"12"}],
+			"technologies_worked_on":"blah blah blah"
+		}
+	]
+}
+{
+	"qualification":[{"degree":"name1", "department":"name2"}, {"degree":"name1", "department":"name2"},{"degree":"name1", "department":"name2"}],
+	"expected_salary":{"min":"300000"},
+	"experiance":[
+		{
+			"sector":"IT",
+			"company_name":"Microsoft Research Labs - India",
+			"duration_in_months":"26",
+			"designation":[{"position":"SE", "duration":{"from_mm__yy":"0614", "to_mm_yy":"0815"}}, {"position":"SSE", "duration":{"from_mm__yy":"0815", "to_mm_yy":"0816"}}],
+			"location":[{"loc1":"noida", "duration_in_months":"10"}, {"loc1":"Bangalore", "duration_in_months":"16"}],
+			"technologies_worked_on":"blah blah blah"
+		},
+		{
+			"sector":"IT",
+			"company_name":"IBM Research Labs - India",
+			"duration_in_months":"12",
+			"designation":[{"position":"CE", "duration":{"from_mm__yy":"0816", "to_mm_yy":"0817"}}],
+			"location":[{"loc1":"Delhi", "duration_in_months":"12"}],
+			"technologies_worked_on":"blah blah blah"
+		}
+	]
+}

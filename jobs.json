@@ -1,0 +1,55 @@
+{
+	"company_name":"Microsoft Research Labs - India",
+	"experience-required":{"min":"1", "max":"2"},
+	"sector":"IT",
+	"eligible-qualification-degrees":[{"degree":"B.Tech."}, {"degree":"B.Sc."}, {"degree":"M.Tech."}],
+	"designation":"software-engineer",
+	"location":[{"city":"noida", "state":"U.P."}, {"city":"bangalore", "state":"Karnataka"}, {"city":"new delhi", "state":"delhi"}],
+	"description":"blah blah blah",
+	"brief_of_skills_required":"blah blah blah",
+	"salary":{"min":"500000", "max":"1500000", "denomination":"Rupee"}
+}
+{
+	"company_name":"Microsoft Redmount",
+	"experience-required":{"min":"1", "max":"2"},
+	"sector":"IT",
+	"eligible-qualification-degrees":[{"degree":"B.Tech."}, {"degree":"B.Sc."}, {"degree":"M.Tech."}],
+	"designation":"software-engineer",
+	"location":[{"city":"noida", "state":"U.P."}, {"city":"bangalore", "state":"Karnataka"}, {"city":"new delhi", "state":"delhi"}],
+	"description":"blah blah blah",
+	"brief_of_skills_required":"blah blah blah",
+	"salary":{"min":"500000", "max":"1500000", "denomination":"Rupee"}
+}
+{
+	"company_name":"Samsung Research India",
+	"experience-required":{"min":"1", "max":"2"},
+	"sector":"IT",
+	"eligible-qualification-degrees":[{"degree":"B.Tech."}, {"degree":"B.Sc."}, {"degree":"M.Tech."}],
+	"designation":"software-engineer",
+	"location":[{"city":"noida", "state":"U.P."}, {"city":"bangalore", "state":"Karnataka"}, {"city":"new delhi", "state":"delhi"}],
+	"description":"blah blah blah",
+	"brief_of_skills_required":"blah blah blah",
+	"salary":{"min":"500000", "max":"1500000", "denomination":"Rupee"}
+}
+{
+	"company_name":"Naukri",
+	"experience-required":{"min":"1", "max":"2"},
+	"sector":"IT",
+	"eligible-qualification-degrees":[{"degree":"B.Tech."}, {"degree":"B.Sc."}, {"degree":"M.Tech."}],
+	"designation":"software-engineer",
+	"location":[{"city":"noida", "state":"U.P."}, {"city":"bangalore", "state":"Karnataka"}, {"city":"new delhi", "state":"delhi"}],
+	"description":"blah blah blah",
+	"brief_of_skills_required":"blah blah blah",
+	"salary":{"min":"500000", "max":"1500000", "denomination":"Rupee"}
+}
+{
+	"company_name":"IBM Research Labs - India",
+	"experience-required":{"min":"1", "max":"2"},
+	"sector":"IT",
+	"eligible-qualification-degrees":[{"degree":"B.Tech."}, {"degree":"B.Sc."}, {"degree":"M.Tech."}],
+	"designation":"software-engineer",
+	"location":[{"city":"noida", "state":"U.P."}, {"city":"bangalore", "state":"Karnataka"}, {"city":"new delhi", "state":"delhi"}],
+	"description":"blah blah blah",
+	"brief_of_skills_required":"blah blah blah",
+	"salary":{"min":"500000", "max":"1500000", "denomination":"Rupee"}
+}
